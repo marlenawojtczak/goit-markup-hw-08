@@ -1,0 +1,109 @@
+.team {
+    background-color: #f5f4fa;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        width: 100%;
+        gap: 30px;
+    }
+    &__card {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__card-content {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+    & &__card-details {
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: $fontColorTertiary;
+        padding-top: 10px;
+    }
+    &__icons-container {
+        max-width: 206px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+    }
+}
+@media screen and (min-width: $tablet) {
+    .team {
+        &__container {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__card {
+            flex-basis: calc((100% - 30px) / 2);
+        }
+    }
+}
+@media screen and (min-width: $desktop) {
+    .team {
+        background-color: #f5f4fa;
+
+        &__container {
+            display: flex;
+flex-wrap: nowrap;
+            justify-content: space-between;
+            padding-top: 50px;
+           
+            width: 100%;
+            height: auto;
+            gap: 1.75rem;
+        }
+
+        &__card {
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+            display: flex;
+            flex-direction: column;
+
+            flex-basis: calc(100% / 2 - 2 * 15px);
+        }
+        &__card-content {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: 0.03em;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0;
+          
+        }
+        & &__card-details {
+            font-size: 16px;
+            line-height: 1.2;
+            letter-spacing: 0.03em;
+            color: $fontColorTertiary;
+            padding-top: 10px;
+        }
+        &__icons-container {
+            max-width: 206px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 16px;
+        }
+        &__card img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}

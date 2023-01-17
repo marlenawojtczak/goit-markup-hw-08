@@ -1,0 +1,26 @@
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: $backlightColor;
+    line-height: 1.2;
+    text-decoration: none;
+
+    &__studio--header {
+        color: $fontColorPrimary;
+    }
+
+    &--footer {
+        color: $fontColorSecondary;
+    }
+}
+@media screen and (min-width: $tablet) {
+    .logo {
+        margin: 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .logo {
+        font-size: 26px;
+    }
+}
