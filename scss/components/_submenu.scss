@@ -1,15 +1,12 @@
 .submenu {
-    
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     padding: 0 15px;
 }
 
-// @media screen and (min-width: 1200px) {
-//     .submenu {
-//         display: flex;
-//         justify-content: center;
-//         list-style: none;
-//     }
-// }
+@media screen and (min-width: $tablet) {
+    .submenu {
+        justify-content: center;
+    }
+}

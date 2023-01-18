@@ -21,7 +21,7 @@
         <!-- HEADER START -->
         <header class="header">
             <div class="container header__container">
-                   <!-- MOBILE MENU OPEN START -->
+                <!-- MOBILE MENU OPEN START -->
                 <div class="mobile-menu">
                     <button
                         class="mobile-menu__toggle js-open-menu"
@@ -145,7 +145,7 @@
             <section class="section">
                 <div class="container">
                     <ul class="projects">
-                        <li>
+                        <li class="projects__card-container">
                             <figure class="projects__card">
                                 <div class="projects__overlay-container">
                                     <img
@@ -183,7 +183,7 @@
                             </figure>
                         </li>
 
-                        <li>
+                        <li  class="projects__card-container">
                             <figure class="projects__card">
                                 <div class="projects__overlay-container">
                                     <img
@@ -221,7 +221,7 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="projects__card-container">
                             <figure class="projects__card">
                                 <div class="projects__overlay-container">
                                     <img
@@ -258,7 +258,7 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li  class="projects__card-container">
                             <figure class="projects__card">
                                 <div class="projects__overlay-container">
                                     <img
@@ -295,7 +295,7 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="projects__card-container">
                             <figure class="projects__card">
                                 <div class="projects__overlay-container">
                                     <img
@@ -304,7 +304,7 @@
                                         srcset="
                                             images/desktop/portfolio5.jpg          370w,
                                             images/desktop/portfolio5@2x.jpg       740w,
-                                            images/tablet/portfolio2-tablet.jpg    354w,
+                                            images/tablet/portfolio5-tablet.jpg    354w,
                                             images/tablet/portfolio5-tablet@2x.jpg 708w,
                                             images/mobile/portfolio5-mobile.jpg    450w,
                                             images/mobile/portfolio5-mobile@2x.jpg 900w
@@ -332,7 +332,7 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="projects__card-container">
                             <figure class="projects__card">
                                 <div class="projects__overlay-container">
                                     <img
@@ -341,7 +341,7 @@
                                         srcset="
                                             images/desktop/portfolio6.jpg          370w,
                                             images/desktop/portfolio6@2x.jpg       740w,
-                                            images/tablet/portfolio2-tablet.jpg    354w,
+                                            images/tablet/portfolio6-tablet.jpg    354w,
                                             images/tablet/portfolio6-tablet@2x.jpg 708w,
                                             images/mobile/portfolio6-mobile.jpg    450w,
                                             images/mobile/portfolio6-mobile@2x.jpg 900w
@@ -369,7 +369,7 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="projects__card-container">
                             <figure class="projects__card">
                                 <div class="projects__overlay-container">
                                     <img
@@ -385,25 +385,6 @@
                                         "
                                         sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px , 100vw"
                                     />
-                                    <!-- <picture>
-                                        <source media="screen and (min-width:
-                                        1200px)"
-                                        srcset="images/desktop/portfolio7.jpg",
-                                        images/desktop/portfolio7@2x.jpg 2x>
-                                        <source media="screen and (min-width:
-                                        768px)"
-                                        srcset="images/tablet/portfolio7-tablet.jpg",
-                                        images/tablet/portfolio7-tablet@2x.jpg
-                                        2x> <source media="screen and
-                                        (min-width: 480px)" srcset="
-                                        images/mobile/portfolio7-mobile.jpg",
-                                        images/mobile/portfolio7-mobile@2x.jpg
-                                        2x>
-                                        <img
-                                            src="images/desktop/portfolio7.jpg"
-                                            alt="Product Designer"
-                                        />
-                                    </picture> -->
                                     <div class="projects__overlay">
                                         <p
                                             class="projects__overlay-description"
@@ -425,7 +406,7 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="projects__card-container">
                             <figure class="projects__card">
                                 <div class="projects__overlay-container">
                                     <img
@@ -462,7 +443,7 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="projects__card-container">
                             <figure class="projects__card">
                                 <div class="projects__overlay-container">
                                     <img
@@ -525,10 +506,14 @@
 
             <ul class="mobile-menu__menu-list">
                 <li class="mobile-menu__menu-list-item">
-                    <a href="/index.html" class="mobile-menu__link-menu">Agencja</a>
+                    <a href="/index.html" class="mobile-menu__link-menu"
+                        >Agencja</a
+                    >
                 </li>
-                <li class="mobile-menu__menu-list-item ">
-                    <a href="/portfolio.html" class="mobile-menu__link-menu mobile-menu__link-menu--active"
+                <li class="mobile-menu__menu-list-item">
+                    <a
+                        href="/portfolio.html"
+                        class="mobile-menu__link-menu mobile-menu__link-menu--active"
                         >Portfolio</a
                     >
                 </li>
@@ -568,108 +553,109 @@
             </ul>
         </div>
         <!-- MOBILE MENU CONTENT END -->
-        <!-- FOOTER START -->
-        <footer class="footer">
-            <div class="container footer__container">
-                <div>
-                    <div class="footer__logo-container">
-                        <a class="logo" href="./index.html"
-                            >Web<span class="logo--footer">Studio</span></a
-                        >
-                    </div>
-                    <address class="address">
-                        <span class="address__text"
-                            >m. Warszawa, Aleje Jerozolimskie 21</span
-                        >
-
-                        <a
-                            class="address__link class address__link--decoration"
-                            href="mailto:info@example.com"
-                            >info@example.com</a
-                        >
-                        <a class="address__link" href="tel:+48111111111"
-                            >+48 111 111 111</a
-                        >
-                    </address>
-                </div>
-
-                <div>
-                    <span class="socials">dołącz do nas</span>
-                    <div class="socials__container">
-                        <a href="#" class="socials-icon socials-icon--footer">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20px"
-                                height="20px"
-                            >
-                                <use
-                                    href="./images/icons.svg#icon-instagram-2"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="socials-icon socials-icon--footer">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20px"
-                                height="20px"
-                            >
-                                <use
-                                    href="./images/icons.svg#icon-twitter-1"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="socials-icon socials-icon--footer">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20px"
-                                height="20px"
-                            >
-                                <use
-                                    href="./images/icons.svg#icon-facebook-1"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="socials-icon socials-icon--footer">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20px"
-                                height="20px"
-                            >
-                                <use
-                                    href="./images/icons.svg#icon-linkedin-1"
-                                ></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <form class="newsletter">
-                    <label class="newsletter__label" for="news"
-                        >zapisz się do newslettera</label
+       <!-- FOOTER START -->
+       <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__container-address">
+                <div class="footer__logo-container">
+                    <a class="logo" href="./index.html"
+                        >Web<span class="logo--footer">Studio</span></a
                     >
-                    <div class="newsletter__container">
-                        <input
-                            class="newsletter__input"
-                            type="email"
-                            name="email"
-                            placeholder="E-mail"
-                            id="news"
-                        />
-                        <button class="button button--newsletter" type="submit">
-                            Zapisz się
-                            <svg
-                                class="newsletter__icon"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24px"
-                                height="24px"
-                            >
-                                <use href="./images/icons.svg#icon-send"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </form>
+                </div>
+
+                <address class="address">
+                    <span class="address__text"
+                        >m. Warszawa, Aleje Jerozolimskie 21</span
+                    >
+
+                    <a
+                        class="address__link class address__link--decoration"
+                        href="mailto:info@example.com"
+                        >info@example.com</a
+                    >
+                    <a class="address__link" href="tel:+48111111111"
+                        >+48 111 111 111</a
+                    >
+                </address>
             </div>
-        </footer>
-        <!-- FOOTER END -->
+
+            <div class="socials__container-join">
+                <span class="socials">dołącz do nas</span>
+                <div class="socials__container">
+                    <a href="#" class="socials-icon socials-icon--footer">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20px"
+                            height="20px"
+                        >
+                            <use
+                                href="./images/icons.svg#icon-instagram-2"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socials-icon socials-icon--footer">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20px"
+                            height="20px"
+                        >
+                            <use
+                                href="./images/icons.svg#icon-twitter-1"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socials-icon socials-icon--footer">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20px"
+                            height="20px"
+                        >
+                            <use
+                                href="./images/icons.svg#icon-facebook-1"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socials-icon socials-icon--footer">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20px"
+                            height="20px"
+                        >
+                            <use
+                                href="./images/icons.svg#icon-linkedin-1"
+                            ></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <form class="newsletter">
+                <label class="newsletter__label" for="news"
+                    >zapisz się do newslettera</label
+                >
+                <div class="newsletter__container">
+                    <input
+                        class="newsletter__input"
+                        type="email"
+                        name="email"
+                        placeholder="E-mail"
+                        id="news"
+                    />
+                    <button class="button button--newsletter" type="submit">
+                        Zapisz się
+                        <svg
+                            class="newsletter__icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24px"
+                            height="24px"
+                        >
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
         <!-- MODAL END-->
         <!-- SCRIPT MODAL START -->
         <script src="./js/modal.js"></script>
