@@ -62,15 +62,12 @@
         cursor: pointer;
     }
 }
-
 @media screen and (min-width: $tablet) {
     .projects {
-        
         flex-direction: row;
         flex-wrap: wrap;
         gap: 30px;
         &__card-container {
-           
             flex-basis: calc((100% - 30px) / 2);
         }
     }
@@ -78,10 +75,7 @@
 @media screen and (min-width: $desktop) {
     .projects {
         &__card-container {
-           
             flex-basis: calc((100% - 60px) / 3);
         }
-
-        
-}
+    }
 }

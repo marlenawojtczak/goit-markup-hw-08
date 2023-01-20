@@ -38,7 +38,6 @@
     .advantages {
         flex-direction: row;
         flex-wrap: wrap;
-
         &__item {
             flex-basis: calc((100% - 30px) / 2);
         }

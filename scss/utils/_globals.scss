@@ -12,10 +12,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 .container {
-    min-width: 320px;
+    max-width: 480px;
     margin: 0 auto;
     padding: 0 15px;
+
 }
 
 .section {
@@ -31,15 +33,12 @@ img {
 }
 @media screen and (min-width: $tablet) {
     .container {
-        min-width: 768px;
+        max-width: 768px;
     }
 }
 @media screen and (min-width: $desktop) {
     .container {
         max-width: 1200px;
-        margin: 0 auto;
-
-        padding: 0 15px;
     }
     .section {
         padding: 94px 15px;

@@ -2,7 +2,6 @@
     background-color: $bgColor;
     display: column;
     text-align: center;
-
     &__logo-container {
         padding-top: 60px;
     }
@@ -11,7 +10,6 @@
     color: rgba(255, 255, 255, 0.6);
     padding-top: 20px;
     padding-bottom: 60px;
-
     &__link {
         font-size: 14px;
         line-height: 1.7;
@@ -37,7 +35,6 @@
         color: $fontColorSecondary;
         font-style: normal;
     }
-
     &__link--decoration {
         color: rgba(255, 255, 255, 0.6);
         text-decoration: underline;
@@ -50,7 +47,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #fff;
-
     &__container {
         display: flex;
         justify-content: center;
@@ -63,7 +59,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 60px;
-
     &__container {
         display: flex;
         flex-direction: column;
@@ -97,130 +92,86 @@
     }
     &__icon {
         fill: #fff;
-        margin-left: 24px;
+        margin-left: 20px;
         position: absolute;
         bottom: 0;
         transform: translateY(-50%);
     }
 }
 
-
 @media screen and (min-width: $tablet) {
     .footer {
-
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+        &__container-menu {
+            display: flex;
+            justify-content: space-between;
+        }
         &__container-address {
-            width: 253px;
-            position: absolute;
-            left: 0;
-            margin-left: 76px;
+            min-width: 253px;
+            margin-left: 61px;
         }
     }
-
     .socials {
         &__container-join {
-            width: 206px;
-            position: absolute;
-            right: 0;
-            margin-bottom: 400px;
-            margin-top: 65px;
-            margin-right: 89px;
+            min-width: 206px;
+            padding-top: 65px;
+            padding-right: 74px;
         }
     }
     .newsletter {
         align-items: center;
-        padding-top: 247px;
+        margin-top: 0;
         &__input {
-            min-width: 450px;
-        }
-        &__container {
-            gap: 0px;
+            width: 450px;
         }
     }
 }
 @media screen and (min-width: $desktop) {
     .footer {
-        
-&__container {
-    
-    display: flex;
-}
-    
-        &__container-address {
-            
-            position: relative;
-            
-            margin-left: 0px;
-            min-width: 250px;
+        &__container {
+            display: flex;
+            flex-direction: row;
         }
-    
-    &__logo-container {
-        padding-top: 60px;
+        &__container-address {
+            margin-left: 0px;
+            min-width: 247px;
+        }
+
+        &__logo-container {
+            padding-top: 60px;
+            display: flex;
+        }
+    }
+    .address {
+        &__link {
+            justify-content: flex-start;
+            padding-top: 9px;
+        }
+    }
+    .socials {
         display: flex;
-        
+        &__container-join {
+            padding-top: 72px;
+            padding-left: 70px;
+        }
     }
-   
-    }
+    .newsletter {
+        width: 570px;
+        align-items: flex-start;
+        padding-top: 72px;
 
-.address {
-  
-   
+        &__container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
 
-    &__link {
-      justify-content: flex-start;
-        padding-top: 9px;
-
-    }
-
-}
-.socials {
-
-    display: flex;
-   
-
-&__container-join {
-    position: relative;
-    margin-bottom: 0px;
-            margin-top: 72px;
-            margin-left: 70px;
-            margin-right: 78px;
-           
-}
-  
-}
-.newsletter {
-   
-    align-items: flex-start;
-    padding-top: 0px;
-    margin-top: 72px;
-   
-    
-
-    &__container {
-        display: flex;
-        flex-direction: row;
-        gap: 12px;
-        align-items: center;
-    }
-    &__label {
-       
-        
-    }
-    &__input {
-        
-        width: 0;
-        min-width: 358px;
-    
-    }
-
-    
-    &__icon {
-        bottom: 50%;
-        transform: translateY(50%);
+        &__input {
+            width: 0;
+            min-width: 344px;
+        }
     }
 }
-
-}
-        
-    
-
-    

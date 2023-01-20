@@ -20,7 +20,6 @@
                 url(../images/mobile/background-mobile@2px.jpg);
         }
     }
-
     &__title {
         font-size: 25px;
         font-weight: 900;
@@ -33,13 +32,11 @@
         margin: 0 auto;
         padding-top: 118px;
     }
-
     &__container {
         display: flex;
         padding-bottom: 118px;
     }
 }
-
 @media screen and (min-width: 768px) {
     .hero {
         background-image: linear-gradient(
@@ -101,7 +98,6 @@
             margin: 0 auto;
             padding-top: 200px;
         }
-
         &__container {
             padding-bottom: 200px;
         }

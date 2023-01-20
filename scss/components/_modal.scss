@@ -16,17 +16,14 @@
         opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 15px;
 }
-
 .modal {
     position: relative;
-
     background-color: $fontColorSecondary;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: $borderRadius;
     margin: auto;
     display: flex;
-
     &__button-close {
         width: 30px;
         height: 30px;
@@ -60,7 +57,6 @@
         text-align: center;
         margin-bottom: 12px;
     }
-
     &__form-label {
         font-size: 12px;
         line-height: 1.2;
@@ -85,7 +81,6 @@
         transition-duration: $transitionDuration;
         transition-timing-function: $transitionTimingFunction;
     }
-
     &__input-icon {
         position: absolute;
         top: 50%;
@@ -111,11 +106,9 @@
         border: 1px solid $backlightColor;
         outline: none;
     }
-
     &__form-input:focus + &__input-icon {
         fill: $backlightColor;
     }
-
     &__statute {
         display: flex;
         align-items: center;
@@ -131,11 +124,9 @@
     }
     &__statute-label {
         font-size: 12px;
-
         line-height: 1.7;
         letter-spacing: 0.03;
         color: $fontColorTertiary;
-
         text-align: center;
     }
     &__link {
@@ -165,5 +156,10 @@
         margin-bottom: 40px;
     }
 }
-
-
+@media screen and (min-width: $desktop) {
+    .modal {
+        &__form {
+            max-width: 528px;
+        }
+    }
+}

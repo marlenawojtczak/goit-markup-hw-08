@@ -22,32 +22,34 @@
         <header class="header">
             <div class="container header__container">
                 <!-- MOBILE MENU OPEN START -->
-                <div class="mobile-menu">
-                    <button
-                        class="mobile-menu__toggle js-open-menu"
-                        aria-expanded="false"
-                        aria-controls="mobile-menu"
-                    >
-                        <svg
-                            width="24"
-                            height="24"
-                            fill="$fontColorPrimary"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"
-                            ></path>
-                        </svg>
-                    </button>
-                </div>
-                <!-- MOBILE MENU OPEN END -->
                 <nav class="header__menu">
-                    <a class="logo" href="index.html"
-                        >Web<span class="logo__studio--header">Studio</span></a
-                    >
+                    <div class="mobile-menu">
+                        <a class="logo" href="./index.html"
+                            >Web<span class="logo__studio--header"
+                                >Studio</span
+                            ></a
+                        >
+                        <button
+                            class="mobile-menu__toggle js-open-menu"
+                            aria-expanded="false"
+                            aria-controls="mobile-menu"
+                        >
+                            <svg
+                                width="24"
+                                height="24"
+                                fill="$fontColorPrimary"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- MOBILE MENU OPEN END -->
                     <ul class="header__menu-list">
                         <li class="header__menu-list-item">
                             <a class="header__menu-link" href="index.html"
@@ -183,7 +185,7 @@
                             </figure>
                         </li>
 
-                        <li  class="projects__card-container">
+                        <li class="projects__card-container">
                             <figure class="projects__card">
                                 <div class="projects__overlay-container">
                                     <img
@@ -258,7 +260,7 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li  class="projects__card-container">
+                        <li class="projects__card-container">
                             <figure class="projects__card">
                                 <div class="projects__overlay-container">
                                     <img
@@ -506,13 +508,13 @@
 
             <ul class="mobile-menu__menu-list">
                 <li class="mobile-menu__menu-list-item">
-                    <a href="/index.html" class="mobile-menu__link-menu"
+                    <a href="index.html" class="mobile-menu__link-menu"
                         >Agencja</a
                     >
                 </li>
                 <li class="mobile-menu__menu-list-item">
                     <a
-                        href="/portfolio.html"
+                        href="portfolio.html"
                         class="mobile-menu__link-menu mobile-menu__link-menu--active"
                         >Portfolio</a
                     >
@@ -553,109 +555,123 @@
             </ul>
         </div>
         <!-- MOBILE MENU CONTENT END -->
-       <!-- FOOTER START -->
-       <footer class="footer">
-        <div class="container footer__container">
-            <div class="footer__container-address">
-                <div class="footer__logo-container">
-                    <a class="logo" href="./index.html"
-                        >Web<span class="logo--footer">Studio</span></a
-                    >
+        <!-- FOOTER START -->
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__container-menu">
+                    <div class="footer__container-address">
+                        <div class="footer__logo-container">
+                            <a class="logo" href="./index.html"
+                                >Web<span class="logo--footer">Studio</span></a
+                            >
+                        </div>
+
+                        <address class="address">
+                            <span class="address__text"
+                                >m. Warszawa, Aleje Jerozolimskie 21</span
+                            >
+
+                            <a
+                                class="address__link class address__link--decoration"
+                                href="mailto:info@example.com"
+                                >info@example.com</a
+                            >
+                            <a class="address__link" href="tel:+48111111111"
+                                >+48 111 111 111</a
+                            >
+                        </address>
+                    </div>
+
+                    <div class="socials__container-join">
+                        <span class="socials">dołącz do nas</span>
+                        <div class="socials__container">
+                            <a
+                                href="#"
+                                class="socials-icon socials-icon--footer"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20px"
+                                    height="20px"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-instagram-2"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a
+                                href="#"
+                                class="socials-icon socials-icon--footer"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20px"
+                                    height="20px"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-twitter-1"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a
+                                href="#"
+                                class="socials-icon socials-icon--footer"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20px"
+                                    height="20px"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-facebook-1"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a
+                                href="#"
+                                class="socials-icon socials-icon--footer"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20px"
+                                    height="20px"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-linkedin-1"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-
-                <address class="address">
-                    <span class="address__text"
-                        >m. Warszawa, Aleje Jerozolimskie 21</span
+                <form class="newsletter">
+                    <label class="newsletter__label" for="news"
+                        >zapisz się do newslettera</label
                     >
-
-                    <a
-                        class="address__link class address__link--decoration"
-                        href="mailto:info@example.com"
-                        >info@example.com</a
-                    >
-                    <a class="address__link" href="tel:+48111111111"
-                        >+48 111 111 111</a
-                    >
-                </address>
+                    <div class="newsletter__container">
+                        <input
+                            class="newsletter__input"
+                            type="email"
+                            name="email"
+                            placeholder="E-mail"
+                            id="news"
+                        />
+                        <button class="button button--newsletter" type="submit">
+                            Zapisz się
+                            <svg
+                                class="newsletter__icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24px"
+                                height="24px"
+                            >
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
-
-            <div class="socials__container-join">
-                <span class="socials">dołącz do nas</span>
-                <div class="socials__container">
-                    <a href="#" class="socials-icon socials-icon--footer">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20px"
-                            height="20px"
-                        >
-                            <use
-                                href="./images/icons.svg#icon-instagram-2"
-                            ></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="socials-icon socials-icon--footer">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20px"
-                            height="20px"
-                        >
-                            <use
-                                href="./images/icons.svg#icon-twitter-1"
-                            ></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="socials-icon socials-icon--footer">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20px"
-                            height="20px"
-                        >
-                            <use
-                                href="./images/icons.svg#icon-facebook-1"
-                            ></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="socials-icon socials-icon--footer">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20px"
-                            height="20px"
-                        >
-                            <use
-                                href="./images/icons.svg#icon-linkedin-1"
-                            ></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <form class="newsletter">
-                <label class="newsletter__label" for="news"
-                    >zapisz się do newslettera</label
-                >
-                <div class="newsletter__container">
-                    <input
-                        class="newsletter__input"
-                        type="email"
-                        name="email"
-                        placeholder="E-mail"
-                        id="news"
-                    />
-                    <button class="button button--newsletter" type="submit">
-                        Zapisz się
-                        <svg
-                            class="newsletter__icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24px"
-                            height="24px"
-                        >
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </footer>
-    <!-- FOOTER END -->
+        </footer>
+        <!-- FOOTER END -->
         <!-- MODAL END-->
         <!-- SCRIPT MODAL START -->
         <script src="./js/modal.js"></script>
