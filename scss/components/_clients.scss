@@ -1,7 +1,8 @@
 .clients {
     display: flex;
     flex-wrap: wrap;
-    gap: 0 30px;
+    gap: 30px;
+    margin-top: 50px;
     &-icon {
         flex-basis: calc((100% - 30px) / 2);
         height: 92px;
@@ -10,7 +11,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 30px;
         fill: $elementColorSecondary;
         transition-property: fill;
         transition-duration: 250ms;
@@ -22,15 +22,19 @@
         cursor: pointer;
     }
 }
-
 @media screen and (min-width: $tablet) {
+    .clients {
+        min-width: 738px;
+    }
     .clients-icon {
         flex-basis: calc((100% - 60px) / 3);
     }
 }
 @media screen and (min-width: 1200px) {
     .clients {
+        min-width: 1170px;
+    }
+    .clients {
         flex-wrap: nowrap;
-        margin-top: 30px;
     }
 }
